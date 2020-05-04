@@ -1,5 +1,7 @@
 # The Web Developer Bootcamp
 
+## Syllabus
+
 | Section    | Topic                                 | Progress    |
 | ---------- | ------------------------------------- | ----------- |
 | Section 1  | Introduction to this Course           | in-progress |
