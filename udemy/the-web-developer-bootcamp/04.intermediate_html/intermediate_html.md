@@ -1,6 +1,6 @@
 # Intermediate HTML
 
-- table
+## table
 
 ```html
 <table>
