@@ -28,12 +28,19 @@
 - Getting user input
 - `action` --> the **URL** to send form data to
 - `method` --> the type of HTTP request
-- The `input` tag creates interactive controls. The "type" attribute determines the type of input.
+- The `input` tag creates interactive controls. 
+  - The `type` attribute determines the type of input.
+  - The `name` attribute binds the data to the variable while sending
+  - The `placeholder` attribute fills the form with some text till user starts interacting
+- `Labels` help us to add captions to individual elements in the form
+  - The `for` attribute can be used (optionally), to bind the label to an input with the specified `id`
+  - Alternatively, input can be placed inside the `label` tag
 
 ```html
 <form action="/submit-page" method="post">
-    <input type="text">
-    <input type="date">
+    <label> Text: <input type="text"> </label>
+    <label for="date"> Date: </label>
+    <input id="date" type="date">
     <input type="color">
     <input type="file">
     <input type="checkbox">
