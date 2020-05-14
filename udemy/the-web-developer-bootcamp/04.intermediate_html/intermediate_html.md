@@ -52,3 +52,4 @@
 
 - The `required` attribute validates that an attribute is not empty
 - The `type` field also performs some validations, like `type="email"`
+- The `pattern` attribute can be added to `input type=text` to match the text with a regular expression
