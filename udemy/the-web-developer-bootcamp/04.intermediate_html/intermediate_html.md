@@ -67,3 +67,27 @@
 <input type="radio" name="input_name" value="input_value_1" checked>
 <input type="radio" name="input_name" value="input_value_2">
 ```
+
+### Select tag
+
+- It represents a control that provides a menu of options
+- Each menu option is specified by the `<option>` element nested inside the `<select>`
+- The `value` attribute in option corresponds to the data that is submitted when the option is chosen.
+- To be able to select multiple value, the `multiple` attribute is specified
+  - Most browsers will show a scrolling list box when this attribute is specified.
+  - The `size` attribute will provide the number of items when the control is presented as a scrolling list box.
+- The `selected` attribute can be specified in one of the options to make it the default selected option, which is the first option by default.
+- There is a `optgroup` tag which can be used to group the options inside a select control.
+
+```html
+<select name="option">
+    <optgroup label="Group1">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </optgroup>
+    <optgroup label="Group2">
+      <option value="3">Option 3</option>
+    </optgroup>
+    ...
+</select>
+```
