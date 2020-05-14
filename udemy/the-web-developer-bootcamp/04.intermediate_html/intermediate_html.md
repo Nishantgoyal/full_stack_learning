@@ -47,3 +47,8 @@
     <!-- all inputs -->
 </form>
 ```
+
+### form validations
+
+- The `required` attribute validates that an attribute is not empty
+- The `type` field also performs some validations, like `type="email"`
