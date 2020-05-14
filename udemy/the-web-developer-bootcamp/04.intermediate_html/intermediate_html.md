@@ -73,6 +73,7 @@
 - It represents a control that provides a menu of options
 - Each menu option is specified by the `<option>` element nested inside the `<select>`
 - The `value` attribute in option corresponds to the data that is submitted when the option is chosen.
+  - If the `value` attribute is not specified the content inside the `<option>` tag is considered the value
 - To be able to select multiple value, the `multiple` attribute is specified
   - Most browsers will show a scrolling list box when this attribute is specified.
   - The `size` attribute will provide the number of items when the control is presented as a scrolling list box.
