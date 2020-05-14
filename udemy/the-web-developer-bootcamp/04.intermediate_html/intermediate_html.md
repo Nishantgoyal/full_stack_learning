@@ -53,3 +53,17 @@
 - The `required` attribute validates that an attribute is not empty
 - The `type` field also performs some validations, like `type="email"`
 - The `pattern` attribute can be added to `input type=text` to match the text with a regular expression
+
+### Input - radio
+
+- These are generally used in radio groups, which is specified by the `name` attribute.
+  - Collection of radio buttons describing a set of related options
+  - Each radio group requires its own unique name
+- Only one radio button in a group can be selected at any one time
+- The `value`  attribute in the radio button contains the radio button value, which is submitted if the button is selected in the radio group.
+- A radio button can be selected by default with the `checked` attribute
+
+```html
+<input type="radio" name="input_name" value="input_value_1" checked>
+<input type="radio" name="input_name" value="input_value_2">
+```
