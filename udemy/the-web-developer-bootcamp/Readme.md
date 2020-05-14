@@ -7,8 +7,8 @@
 | Section 1  | Introduction to this Course           | done        |
 | Section 2  | Introduction to Front End Development | done        |
 | Section 3  | Introduction to HTML                  | done        |
-| Section 4  | Intermediate HTML                     | in-progress |
-| Section 5  | Introduction to CSS                   | TODO        |
+| Section 4  | Intermediate HTML                     | done        |
+| Section 5  | Introduction to CSS                   | in-progress |
 | Section 6  | Intermediate CSS                      | TODO        |
 | Section 7  | Bootstrap (3)                         | TODO        |
 | Section 8  | Bootstrap 4!                          | TODO        |
