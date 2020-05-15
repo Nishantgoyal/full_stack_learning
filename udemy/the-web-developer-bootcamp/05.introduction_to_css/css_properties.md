@@ -105,6 +105,22 @@
   - *Two Value Syntax* - first value: width, second value: height
     - `background-size: 50% auto`
 
+### background-attachment
+
+- It sets whether a background image's position is fixed within the `viewport`, or scrolls with its containing block.
+- **Syntax**
+  - *Keyword Values*
+    - `background-attachment: fixed`
+      - background is fixed with respect to the viewport
+      - Even if the element has a scrolling mechanism, the background doesn't move with the element
+      - *Not compatible with `background-clip: text`*
+    - `background-attachment: local`
+      - The background is fixed relative to the element's contents
+      - If the element has a scrolling mechanism, the background scrolls with the element's contents
+      - The background painting area and background positioning area are relative to the scrollable area of the element rather than to the border framing them
+    - `background-attachment: scroll`
+      - The background is fixed relative to the element and does not scroll with its contents
+
 ### background
 
 - sets all background style properties
