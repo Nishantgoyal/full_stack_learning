@@ -123,10 +123,26 @@
 
 ### background
 
-- sets all background style properties
-  - background-clip
-  - background-color
-  - background-image
-  - background-origin
-  - background-size
-  - background-repeat
+- A shorthand that sets the following properties in a single declaration:
+  - `background-clip`
+  - `background-color`
+  - `background-image`
+  - `background-origin`
+  - `background-postition`
+  - `background-size`
+  - `background-repeat`
+  - `background-attachment`
+- Syntax is as follows:
+  - It includes zero or one occurences of any of the following values:
+    - `<attachment>`
+    - `<bg-image>`
+    - `<position>`
+    - `<bg-size>`
+      - Included immediately after `position`, seperated with the `/` character
+      - e.g., "center/80%"
+    - `<repeat-style>`
+    - `<box>`
+      - may be included zero, one or two times
+      - If once: sets both `background-origin` and `background-clip`
+      - If twice: first occurence sets `background-origin` and second sets `background-clip`
+    - `<background-color>` may be included in the last layer specified
