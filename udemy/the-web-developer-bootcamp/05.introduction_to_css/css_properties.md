@@ -87,6 +87,24 @@
   - The image is not repeated
   - Position is determined by the `background-position` CSS property
 
+### background-size
+
+- It set's the size of the element's background image
+- **Syntax**
+  - *Keyword Values*
+    - `background-size: cover`
+      - Scales the image as large as possible without stretching the image
+      - The image is cropped, if the proportions differ from the element
+    - `background-size: contain`
+      - Scales the image as large as possible without cropping or stretching the image and then repeats
+  - *One Value Syntax* - the width of the image. Height becomes `auto`
+    - `background-size: 50%`
+    - `background-size: 3.2em`
+    - `background-size: 12px`
+    - `background-size: auto`
+  - *Two Value Syntax* - first value: width, second value: height
+    - `background-size: 50% auto`
+
 ### background
 
 - sets all background style properties
