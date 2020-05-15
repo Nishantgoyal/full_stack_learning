@@ -59,6 +59,34 @@
     - 1st and 3rd are keyword values, one for X-axis and other for Y-axis
     - 2nd and 4th values are `<length>` or `<percentage>`, as the offsets of the 1st and 3rd values respectively
 
+### background-repeat
+
+- It sets how background images are repeated
+- A background image can be repeated along the horizontal and vertical axis, or not repeated at all
+- **Syntax**
+  - *Kerword Values*
+    - `background-repeat: repeat-x`
+    - `background-repeat: repeat-y`
+    - `background-repeat: repeat`
+    - `background-repeat: space`
+    - `background-repeat: round`
+    - `background-repeat: no-repeat`
+  - *Two-value syntax: horizontal | vertical*
+    - `background-repeat: repeat space`
+- The one value syntax is a shorthand for two value syntax
+- *repeat*
+  - The image is repeated as much as needed to cover the whole background. The last image will be clipped if it doesn't fit.
+- *space*
+  - The image is repeated as much as possible without clipping
+  - The first and last images are pinned to each side of the element
+  - Whitespace is distributed evenly between the images
+- *round*
+  - The repeated images will stretch until there is room (>half of image width) for another one to be added
+  - When the next one is added all the current ones compress to allow room
+- *no-repeat*
+  - The image is not repeated
+  - Position is determined by the `background-position` CSS property
+
 ### background
 
 - sets all background style properties
