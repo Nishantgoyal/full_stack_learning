@@ -20,9 +20,17 @@
   - `background-clip: text;`
     - The background is painted withing the foreground text
 
+### background-origin
+
+- It sets the background's origin
+  - `background-origin: border-box`
+  - `background-origin: padding-box`
+  - `background-origin: content-box`
+
 ### background
 
 - sets all background style properties
+  - background-clip
   - background-color
   - background-image
   - background-origin
