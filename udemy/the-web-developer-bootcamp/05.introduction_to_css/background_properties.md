@@ -113,7 +113,7 @@
     - `background-attachment: scroll`
       - The background is fixed relative to the element and does not scroll with its contents
 
-# background
+## background
 
 - A shorthand that sets the following properties in a single declaration:
   - `background-clip`

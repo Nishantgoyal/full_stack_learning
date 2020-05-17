@@ -5,20 +5,6 @@
 
 ## The General Rule
 
-- The selectors are of following types:
-  - **Type Selector**
-    - Syntax: `elementname`
-    - e.g., *h1 {}, p {}...*
-  - **Class Selector**
-    - Syntax: `.classname`
-    - e.g., *.cities*
-  - **ID Selector**
-    - Syntax: `#idname`
-    - e.g., *#toc*
-  - **Attribute Selector**
-    - Select all elements that have the given attribute
-    - Syntax: `[attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]`
-
 ```css
 selector {
     property: value;
