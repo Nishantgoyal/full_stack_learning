@@ -1,0 +1,44 @@
+body {
+    margin: auto;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.outer {
+    width: 400px;
+    margin:auto;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
+}
+
+.row {
+    display: flex;
+}
+
+.vertical {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.horizontal {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 240, 240);
+}
+table {
+    margin: auto;
+}
