@@ -46,3 +46,13 @@ It is also used to compute the size of `em`, `ex`, and other relative **length**
 - **Rems**
   - Invented to sidestep the compounding problem in `ems`
   - `rem` is related to the root `html` element.
+
+## -> font-family
+
+It specifies a prioritized list of one or more font-family names and/or generic family names.
+
+Values are seperated by commas to indicate that they are alternatives.
+
+The browser will select the first-font that is available or that can be downloaded using the `@font-face` rule.
+
+One generic-font family is recommended to be included, in the case none of the specified font-families are available on the client side.
