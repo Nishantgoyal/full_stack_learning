@@ -56,3 +56,27 @@ Values are seperated by commas to indicate that they are alternatives.
 The browser will select the first-font that is available or that can be downloaded using the `@font-face` rule.
 
 One generic-font family is recommended to be included, in the case none of the specified font-families are available on the client side.
+
+## -> font
+
+It is a shorthand for:
+
+- font-style (Mandatory)
+- font-family (Mandatory)
+- font-style
+  - whether a font should be styled with a normal, italic, or oblique face
+- font-variant
+  - normal or small-caps
+- font-weight
+  - sets the weight (or boldness) of the font
+- font-stretch
+  - It selects a normal, condensed, or expanded face from a font
+  - must be a single value keyword
+- line-height
+  - sets the height of a line box
+
+The Syntax of specifying font shorthand is as follows:
+
+- `font-style`, `font-variant` and `font-wieght` must precede `font-size`
+- `line-height` must immediately follow `font-size`, preceded by a `'/'`, e.g., `16px/3`
+- `font-family` must be the last value specified
