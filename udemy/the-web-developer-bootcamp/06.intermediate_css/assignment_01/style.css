@@ -14,7 +14,7 @@ h1 {
 }
 
 .cell {
-    height: 100px;
+    height: 100px; 
     width: 100px;
     display: inline-block;
     background-color: rgb(240, 240, 240);
@@ -38,7 +38,13 @@ td {
     width: 100px;
     height: 100px;
     background-color: rgb(240, 240, 240);
+    border-image-width: 0;
+    /* border: 1px solid red; */
+}
+tr {
+    margin: 0;
 }
 table {
+    border-spacing: 0;
     margin: auto;
 }
