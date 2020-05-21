@@ -28,6 +28,21 @@ It includes `predefined classes` for easy layout options, as well as powerful `m
 - Content should be placed within columns
 - Grid columns are created by specifying the twelve available columms you wish to span.
 
+### Grid Sizes
+
+- *Extra Small:*
+  - `col-xs-*`
+  - **<768px**
+- *Small:*
+  - `col-sm-*`
+  - **>=768px**
+- *Medium:*
+  - `col-md-*`
+  - **>=992px**
+- *Large:*
+  - `col-lg-*`
+  - **>=1200px**
+
 ### Bootstrap 3 CDN
 
 ```html
