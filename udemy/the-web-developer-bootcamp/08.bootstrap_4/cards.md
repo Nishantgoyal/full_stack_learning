@@ -21,4 +21,6 @@ These support a wide variety of content, including images, text, etc.
   - Use it when you need a padded section within a card.
 - **Title, Text and Links**
   - Card titles are used by adding a `.card-title` to a `<h*>` tag.
+  - Card Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag.
+  - If the title and subtitle elements are places inside a card body, they are aligned nicely.
   - Links are added and placed to each other by adding `.card-link` to an `<a>` tag.
