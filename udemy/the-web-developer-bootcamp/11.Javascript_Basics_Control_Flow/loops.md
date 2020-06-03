@@ -10,3 +10,11 @@ while (counter < 10) {
     counter++;
 }
 ```
+
+## For loop
+
+```js
+for (init; condition; step) {
+    // ...
+}
+```
