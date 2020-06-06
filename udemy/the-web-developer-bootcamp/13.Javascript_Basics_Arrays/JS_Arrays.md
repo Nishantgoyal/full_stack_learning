@@ -16,7 +16,7 @@ var arr = new Array(); // uncommon
 
 ## Methods
 
-### Push
+### -> Push
 
 Adds an element to the end of the array
 
@@ -26,7 +26,7 @@ arr.push(2);
 arr.push(4);
 ```
 
-### Pop
+### -> Pop
 
 Remove and return the last element in an array
 
@@ -35,7 +35,7 @@ var arr = [1, 2, 3]
 ele = arr.pop() // returns 3
 ```
 
-### Shift
+### -> Shift
 
 Removes the first item from the array
 
@@ -44,7 +44,7 @@ var arr = [1, 2, 3]
 ele = arr.shift() // returns 1
 ```
 
-### Un-Shift
+### -> Un-Shift
 
 Adds an item to the front of the array
 
@@ -53,7 +53,7 @@ var arr = [1, 2, 3]
 arr.unshift(4) // arr - [4,1,2,3]
 ```
 
-### indexOf
+### -> indexOf
 
 find the  first index of an item in an array and return. Returns `-1` if element is not present.
 
@@ -62,7 +62,7 @@ var arr = [1, 2, 3]
 index_of_3 = arr.indexOf(3) // returns 3
 ```
 
-### Slice
+### -> Slice
 
 Copies parts of an array. Can also be used to copy the entire array using no arguments: `slice()`.
 
