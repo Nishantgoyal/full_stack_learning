@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+    <style>
+        .purple {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Me!</button>
+    <script>
+        var ele = document.querySelector("button");
+        var body = document.querySelector("body");
+        ele.addEventListener("click", function() {
+            body.classList.toggle("purple");
+        });
+    </script>
+</body>
+
+</html>
