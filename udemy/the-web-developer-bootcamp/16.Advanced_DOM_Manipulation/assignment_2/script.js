@@ -12,6 +12,12 @@ function reset_score() {
     }
 }
 
+function set_max_score(event) {
+    var max_counter = document.querySelector("#max_counter");
+    // console.log(event);
+    max_counter.textContent = event.target.value;
+}
+
 function main() {
     // Score should increase on clicking the button
     var players = document.querySelectorAll(".players");
@@ -22,6 +28,10 @@ function main() {
     // Reset
     var reset_button = document.querySelector("#reset");
     reset_button.addEventListener("click", reset_score);
+
+    // Setting Max Score
+    var score_selector = document.querySelector("#score_selector");
+    score_selector.addEventListener("change", set_max_score);
 }
 
 main()
