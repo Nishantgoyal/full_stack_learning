@@ -1,5 +1,7 @@
 function increase_score() {
-    if (winner) { return; }
+    if (winner) {
+        return;
+    }
     player_id = this.getAttribute("id")
     var player_counter = document.querySelector("#" + player_id + "_Score");
     current_score = Number(player_counter.textContent);
