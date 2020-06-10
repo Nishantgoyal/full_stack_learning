@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOs</title>
+    <style>
+        .pink {
+            background-color: lavenderblush;
+        }
+        
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TODOs</h1>
+    <ul>
+        <li>Todo 1</li>
+        <li>Todo 2</li>
+        <li>Todo 3</li>
+    </ul>
+    <script>
+        var li_s = document.querySelectorAll("ul li");
+        console.log(li_s);
+        for (var i = 0; i < li_s.length; i++) {
+            li_s[i].addEventListener("mouseover", function() {
+                this.classList.toggle("pink");
+                console.log(this.classList);
+            });
+            li_s[i].addEventListener("mouseout", function() {
+                this.classList.toggle("pink");
+                console.log(this.classList);
+            });
+            li_s[i].addEventListener("click", function() {
+                this.classList.add("done");
+            });
+        }
+    </script>
+</body>
+
+</html>
