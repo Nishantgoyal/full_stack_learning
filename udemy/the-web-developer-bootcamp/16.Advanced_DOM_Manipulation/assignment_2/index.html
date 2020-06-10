@@ -9,22 +9,13 @@
 
 <body>
     <h1>
-        <span class="scores" id="p1_Score">0</span> to <span class="scores" id="p2_Score">0</span>
+        <span class="scores" id="p1_Score">0</span> to
+        <span class="scores" id="p2_Score">0</span>
     </h1>
     <p>
         Playing to <span id="max_counter">5</span>:
     </p>
-    <select name="max_score" id="score_selector">
-        <option value=""></option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-    </select>
+    <input type="number" name="max_score" id="score_selector">
     <button class="players" id="p1">Player one</button>
     <button class="players" id="p2">Player two</button>
     <button id="reset">Reset</button>

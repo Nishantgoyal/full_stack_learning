@@ -14,6 +14,7 @@ function increase_score() {
 }
 
 function reset_score() {
+    console.log("Reset")
     scores = document.querySelectorAll(".scores");
     for (var i = 0; i < scores.length; i++) {
         scores[i].textContent = 0;
@@ -24,7 +25,7 @@ function reset_score() {
 
 function set_score_selector() {
     var score_selector = document.querySelector("#score_selector");
-    score_selector.selectedIndex = 0;
+    score_selector.value = ""
 }
 
 function set_max_score(event) {
@@ -46,7 +47,7 @@ function main() {
     // Reset
     var reset_button = document.querySelector("#reset");
     reset_button.addEventListener("click", reset_score);
-    // reset_button.addEventListener("click", set_score_selector);
+    reset_button.addEventListener("click", set_score_selector);
 
     // Setting Max Score
     var score_selector = document.querySelector("#score_selector");
