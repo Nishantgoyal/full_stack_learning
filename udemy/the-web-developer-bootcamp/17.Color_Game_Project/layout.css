@@ -1,0 +1,23 @@
+/* This Stylesheet will make for the placement of the different components of the site */
+
+body {
+    background-color: #232323;
+    color: white;
+}
+
+#header {
+    background-color: steelblue;
+    text-align: center;
+}
+
+#controls {
+    background-color: white;
+    color: steelblue;
+    text-align: center;
+}
+
+.selected,
+.control:hover {
+    background-color: steelblue;
+    color: white;
+}
