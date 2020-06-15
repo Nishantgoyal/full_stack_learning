@@ -7,16 +7,15 @@
     <title>Color Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="game_area.css">
 </head>
 
 <body>
 
     <div id="header" class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-6">
                 <div class="header_text">The Great</div>
-                <div id="color" class="color_choice">RGB(100,100,100)</div>
+                <div id="color" class="color_choice">RGB(<span id="red"></span>,<span id="green"></span>,<span id="blue"></span>)</div>
                 <div class="header_text">Color Game</div>
             </div>
         </div>
@@ -24,23 +23,33 @@
 
     <div id="controls" class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-6">
                 <div class="row justify-content-between">
                     <div id="control_1" class="col-3 control">
                         New Game
                     </div>
+                    <div id="try"></div>
                     <div id="control_2" class="col-3">
                         <div class="row">
-                            <div id="easy" class="control">Easy</div>
-                            <div id="hard" class="selected control">Hard</div>
+                            <div id="easy" class="control mode">Easy</div>
+                            <div id="hard" class="selected control mode">Hard</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div id="color_boxes" class="container-fluid">
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div id="color_boxes"></div>
+    <script src="script.js"></script>
     <!-- Bootstrap 4 -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>

@@ -21,3 +21,10 @@ body {
     background-color: steelblue;
     color: white;
 }
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
+    border-radius: 15px;
+}
