@@ -32,7 +32,7 @@ function card_click() {
         document.querySelector("#header").style.backgroundColor = "rgb(" + color_values[0] + "," + color_values[1] + "," + color_values[2] + ")";
         show_cards(true);
         document.querySelector("#try").textContent = "Correct!";
-        document.querySelector("#control_1").textContent = "Play Again?";
+        document.querySelector("#reset").textContent = "Play Again?";
     }
 
 }
@@ -101,9 +101,10 @@ var color_values;
 var correct_card;
 main();
 var done = false;
-document.querySelector("#control_1").addEventListener("click", function() {
+document.querySelector("#reset").addEventListener("click", function() {
+    document.querySelector("#header").style.backgroundColor = "steelblue";
     display_heading_colors();
-    document.querySelector("#control_1").textContent = "New Game";
+    document.querySelector("#reset").textContent = "New Game";
     document.querySelector("#try").textContent = "";
     show_cards();
     done = false;
