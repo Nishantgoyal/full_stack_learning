@@ -4,20 +4,19 @@ body {
     background-color: #232323;
     color: white;
     text-transform: uppercase;
+    font-family: "Montserrat", "Avenir";
 }
 
 #header {
     background-color: steelblue;
     text-align: center;
-}
-
-.header_text {
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.1;
 }
 
 .color_choice {
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 400;
 }
 
