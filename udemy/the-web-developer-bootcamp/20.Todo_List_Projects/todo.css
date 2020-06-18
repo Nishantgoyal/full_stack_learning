@@ -9,9 +9,26 @@ body {
 }
 
 #todo_input {
+    width: 190px;
+}
+
+table {
+    width: 200px;
+}
+
+tr {
     width: 200px;
 }
 
 .delete {
+    display: none;
+}
+
+.strike {
+    text-decoration: line-through;
+    /* background-color: red; */
+}
+
+.hide {
     display: none;
 }
