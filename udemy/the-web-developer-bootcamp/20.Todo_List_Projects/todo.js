@@ -6,15 +6,24 @@ $("#todo_input").on("keypress", function(event) {
     }
 });
 
-$("table").on("click", "tr", function() {
-
-    console.log($("li"));
+$("#TODO_list").on("click", "tr", function() {
+    $(this).toggleClass("strike");
 });
 
 
 $("#TODO_list").on("mouseover", "tr", function() {
     $(this).find(".delete").css("display", "inline-block");
 });
+
 $("#TODO_list").on("mouseout", "tr", function() {
     $(this).find(".delete").css("display", "none");
 });
+
+
+$("#TODO_list").on("click", ".delete", function() {
+    $(this).parent().parent().remove();
+});
+
+$("#hide_search").on("click", function() {
+    $("#todo_input").toggleClass("hide");
+})
