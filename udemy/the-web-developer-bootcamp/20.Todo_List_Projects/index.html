@@ -5,29 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="todo.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div id="heading" class="col-4">
-                To-Do List
-                <button id="hide_search">plus</button>
-            </div>
+    <div class="todo_container">
+        <div class="header">
+            <h2>To-Do List</h2>
+            <i id="hide_search" class="fa fa-plus"></i>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <input type="text" name="AddTODO" id="todo_input">
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <table id="TODO_list">
-                </table>
-            </div>
-        </div>
+        <table id="TODO_list" class="table table-striped">
+            <tbody>
+                <tr>
+                    <th class="p-0">
+                        <input type="text" name="AddTODO" id="todo_input" placeholder="Add New Todo">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!-- Scripts -->
