@@ -76,6 +76,7 @@ th input {
 }
 
 .strike {
+    color: gray;
     text-decoration: line-through;
 }
 
@@ -85,7 +86,7 @@ th input {
 
 .item {
     padding-left: 30px;
-    color: #666;
+    color: black;
     font-size: 16px;
     font-weight: 400;
 }
