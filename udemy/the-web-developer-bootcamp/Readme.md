@@ -24,8 +24,8 @@
 | Section 18 | Intro to jQuery                       | done        |
 | Section 19 | Advanced jQuery                       | done        |
 | Section 20 | Todo List Projects                    | done        |
-| Section 21 | OPTIONAL Project: Patatap Clone       | in-progress |
-| Section 22 | Backend Basics                        | TODO        |
+| Section 21 | OPTIONAL Project: Patatap Clone       | done        |
+| Section 22 | Backend Basics                        | in-progress |
 | Section 23 | The Command Line                      | TODO        |
 | Section 24 | Node JS                               | TODO        |
 | Section 25 | Server Side Frameworks                | TODO        |
