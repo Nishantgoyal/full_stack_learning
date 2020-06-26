@@ -26,7 +26,7 @@
 | Section 20 | Todo List Projects                    | done        |
 | Section 21 | OPTIONAL Project: Patatap Clone       | done        |
 | Section 22 | Backend Basics                        | in-progress |
-| Section 23 | The Command Line                      | TODO        |
+| Section 23 | The Command Line                      | in-progress |
 | Section 24 | Node JS                               | TODO        |
 | Section 25 | Server Side Frameworks                | TODO        |
 | Section 26 | Intermediate Express                  | TODO        |
