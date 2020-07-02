@@ -2,3 +2,4 @@
 images
 ignore
 node_modules
+package*.json
