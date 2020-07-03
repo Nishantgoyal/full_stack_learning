@@ -1,0 +1,15 @@
+body {
+    background: url(https://images.unsplash.com/photo-1593270573246-2dca2f2c1c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80);
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+}
+
+img {
+    height: 80vh;
+    width: 80vh;
+}
+
+li {
+    list-style: none;
+}
