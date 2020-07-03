@@ -11,3 +11,4 @@
 | Section 5 | Build a CRUD app with SQLAlchemy - Part 1 | TODO        |
 | Section 6 | Migrations                                | TODO        |
 | Section 7 | Build a CRUD app with SQLAlchemy - Part 2 | TODO        |
+| Section 8 | Project: Fyyur                            | TODO        |
