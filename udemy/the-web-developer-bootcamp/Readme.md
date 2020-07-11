@@ -33,7 +33,7 @@
 | Section 27 | Working With API's                    | done        |
 | Section 28 | YelpCamp: Basics                      | done        |
 | Section 29 | Databases                             | done        |
-| Section 30 | YelpCamp: Data Persistence            | in-progress |
+| Section 30 | YelpCamp: Data Persistence            | done        |
 | Section 31 | RESTful Routing                       | TODO        |
 | Section 32 | Data Associations                     | TODO        |
 | Section 33 | YelpCamp: Comments                    | TODO        |
