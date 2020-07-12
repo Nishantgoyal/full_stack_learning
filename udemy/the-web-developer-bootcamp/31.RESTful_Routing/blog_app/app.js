@@ -53,6 +53,18 @@ app.post("/blogs", function(req, res) {
   });
 });
 
+app.get("/blogs/:id", function(req, res) {
+  Blog.findById(req.params.id, function(err, blog) {
+    if(err) {
+      console.log("Error");
+      console.log(err);
+      res.render("/blogs");
+    } else {
+      res.render("show", {blog:blog});
+    }
+  });
+});
+
 app.listen(8080, function() {
     console.log("Restful Blog Post");
 });
