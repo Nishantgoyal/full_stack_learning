@@ -19,19 +19,6 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-// Blog.create({
-//   title: "First Post",
-//   image: "https://images.unsplash.com/photo-1547234935-80c7145ec969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80",
-//   body: "mountains under white clouds at daytime"
-// }, function(err, blog) {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log("Created Blog:");
-//     console.log(blog);
-//   }
-// });
-
 // Routes
 
 app.get("/", function(req, res) {

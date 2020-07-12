@@ -4,11 +4,21 @@
     <div class="ui huge header">
       New Blog
     </div>
-    <form action="/blogs" method="POST">
-        <input type="text" name="blog[title]" placeholder="Title">
-        <input type="text" name="blog[image]" placeholder="image_url">
-        <input type="text" name="blog[body]" placeholder="Blog Post">
-        <input type="submit">
+    <form class="ui form" action="/blogs" method="POST">
+        <div class="field">
+          <label> Title
+            <input type="text" name="blog[title]" placeholder="Title">
+          </label>
+        </div>
+        <div class="field">
+          <label> Image URL
+          <input type="text" name="blog[image]" placeholder="image_url">
+        </div>
+        <div class="field">
+          <label> Blog Post
+          <textarea name="blog[body]" placeholder="Blog Post"></textarea>
+        </div>
+        <input type="submit" class="ui black basic button">
     </form>
 </div>
 
