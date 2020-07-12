@@ -1,12 +1,14 @@
 <%- include ("partials/header.ejs") %>
 
+<div class="ui main text container segment">
     <% blogs.forEach(function(blog) { %>
         <div>
             <h3> <%= blog.title %> </h3>
-            <img src="<%= blog.image %>">
+            <img class="ui fluid image" src="<%= blog.image %>">
             <span> <%= blog.created %> </span>
             <p> <%= blog.body %> </p>
         </div>
     <% }); %>
+</div>
 
 <%- include ("partials/footer.ejs") %>
