@@ -1,13 +1,14 @@
-const express     = require("express"),
-      app         = express(),
-      bodyParser  = require("body-parser"),
-      mongoose    = require("mongoose");
+const express        = require("express"),
+      app            = express(),
+      bodyParser     = require("body-parser"),
+      methodOverride = require("method-override"),
+      mongoose       = require("mongoose");
 
 mongoose.connect("mongodb://192.168.2.2/app_blog");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
+app.use(methodOverride("_method"));
 app.set("view engine","ejs");
 
 var blogSchema = new mongoose.Schema({
@@ -61,6 +62,30 @@ app.get("/blogs/:id", function(req, res) {
       res.render("/blogs");
     } else {
       res.render("show", {blog:blog});
+    }
+  });
+});
+
+app.get("/blogs/:id/edit", function(req, res) {
+  Blog.findById(req.params.id, function(err, blog) {
+    if(err) {
+      console.log("Error");
+      console.log(err);
+      res.render("/blogs");
+    } else {
+      res.render("edit", {blog: blog});
+    }
+  });
+});
+
+app.put("/blogs/:id", function(req, res) {
+  Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, blog) {
+    if(err) {
+      console.log("Error");
+      console.log(err);
+      res.redirect("/blogs");
+    } else {
+      res.redirect("/blogs/" + req.params.id);
     }
   });
 });

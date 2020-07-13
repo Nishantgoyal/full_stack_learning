@@ -11,15 +11,13 @@
         <div class="content">
           <%= blog.created.toDateString() %>
         </div>
+        <a href="/blogs/<%= blog.id %>/edit"> Edit Blog </a>
         <hr>
         <div class="description">
           <%= blog.body %>
         </div>
       </div>
     </div>
-</div>
-<div>
-  <a href="/blogs"> View all Blogs</a>
 </div>
 
 <%- include ("partials/footer.ejs") %>
