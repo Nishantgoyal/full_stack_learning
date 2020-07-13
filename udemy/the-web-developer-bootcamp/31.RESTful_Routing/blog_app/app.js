@@ -90,6 +90,18 @@ app.put("/blogs/:id", function(req, res) {
   });
 });
 
+app.delete("/blogs/:id", function(req, res) {
+  Blog.findByIdAndRemove(req.params.id, function(err) {
+    if(err) {
+      console.log("Error");
+      console.log(err);
+      res.redirect("/blogs");
+    } else {
+      res.redirect("/blogs");
+    }
+  });
+});
+
 app.listen(8080, function() {
     console.log("Restful Blog Post");
 });
