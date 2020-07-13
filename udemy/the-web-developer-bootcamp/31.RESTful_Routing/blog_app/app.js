@@ -31,6 +31,7 @@ app.get("/blogs", function(req, res) {
     if(err) {
       console.log("Error in finding blogs");
       console.log(err);
+      res.send(err);
     } else {
       console.log("Retrieved blogs successfully");
       res.render("index", {blogs: blogs});
@@ -47,7 +48,7 @@ app.post("/blogs", function(req, res) {
     if(err) {
       console.log("ERROR");
       console.log(err);
-      res.render("new");
+      res.send(err);
     } else {
       res.redirect("/blogs");
     }
@@ -55,11 +56,13 @@ app.post("/blogs", function(req, res) {
 });
 
 app.get("/blogs/:id", function(req, res) {
+  console.log("Show Blog");
+  console.log("ID: " + req.params.id);
   Blog.findById(req.params.id, function(err, blog) {
     if(err) {
       console.log("Error");
       console.log(err);
-      res.render("/blogs");
+      res.send(err);
     } else {
       res.render("show", {blog:blog});
     }
@@ -71,7 +74,7 @@ app.get("/blogs/:id/edit", function(req, res) {
     if(err) {
       console.log("Error");
       console.log(err);
-      res.render("/blogs");
+      res.send(err);
     } else {
       res.render("edit", {blog: blog});
     }
@@ -83,7 +86,7 @@ app.put("/blogs/:id", function(req, res) {
     if(err) {
       console.log("Error");
       console.log(err);
-      res.redirect("/blogs");
+      res.send(err);
     } else {
       res.redirect("/blogs/" + req.params.id);
     }
@@ -95,7 +98,7 @@ app.delete("/blogs/:id", function(req, res) {
     if(err) {
       console.log("Error");
       console.log(err);
-      res.redirect("/blogs");
+      res.send(err);
     } else {
       res.redirect("/blogs");
     }

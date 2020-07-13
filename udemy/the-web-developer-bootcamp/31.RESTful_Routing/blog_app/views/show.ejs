@@ -16,8 +16,8 @@
           <%= blog.body %>
         </div>
         <br>
-        <a class="ui orange basic button" href="/blogs/<%= blog.id %>/edit"> Edit Blog </a>
-        <form class="delete" action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
+        <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit"> Edit Blog </a>
+        <form class="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
           <input type="submit" value="Delete" class="ui red basic button">
         </form>
       </div>
