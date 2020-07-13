@@ -1,14 +1,16 @@
-const express        = require("express"),
-      app            = express(),
-      bodyParser     = require("body-parser"),
-      methodOverride = require("method-override"),
-      mongoose       = require("mongoose");
+const express          = require("express"),
+      app              = express(),
+      bodyParser       = require("body-parser"),
+      methodOverride   = require("method-override"),
+      expressSanitizer = require("express-sanitizer"),
+      mongoose         = require("mongoose");
 
 mongoose.connect("mongodb://192.168.2.2/app_blog");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
+app.use(expressSanitizer());
 app.set("view engine","ejs");
 
 var blogSchema = new mongoose.Schema({
@@ -44,6 +46,7 @@ app.get("/blogs/new", function(req, res) {
 });
 
 app.post("/blogs", function(req, res) {
+  req.body.blog.body = req.sanitize(req.body.blog.body);
   Blog.create(req.body.blog, function(err, blog) {
     if(err) {
       console.log("ERROR");
@@ -82,6 +85,7 @@ app.get("/blogs/:id/edit", function(req, res) {
 });
 
 app.put("/blogs/:id", function(req, res) {
+  req.body.blog.body = req.sanitize(req.body.blog.body);
   Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, blog) {
     if(err) {
       console.log("Error");
