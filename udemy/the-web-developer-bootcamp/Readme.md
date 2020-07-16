@@ -36,7 +36,7 @@
 | Section 30 | YelpCamp: Data Persistence            | done        |
 | Section 31 | RESTful Routing                       | done        |
 | Section 32 | Data Associations                     | done        |
-| Section 33 | YelpCamp: Comments                    | TODO        |
+| Section 33 | YelpCamp: Comments                    | in-progress |
 | Section 34 | Authentication                        | TODO        |
 | Section 35 | YelpCamp: Adding Authentication       | TODO        |
 | Section 36 | YelpCamp: Cleaning Up                 | TODO        |
