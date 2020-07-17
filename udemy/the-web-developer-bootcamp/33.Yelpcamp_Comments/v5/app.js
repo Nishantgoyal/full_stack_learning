@@ -11,6 +11,7 @@ seedDB();
 mongoose.connect("mongodb://192.168.2.2/yelpcamp-v2");
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(__dirname + "/public"));
 app.set("view engine","ejs");
 
 app.get("/", function(req, res) {
