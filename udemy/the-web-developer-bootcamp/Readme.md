@@ -38,7 +38,7 @@
 | Section 32 | Data Associations                     | done        |
 | Section 33 | YelpCamp: Comments                    | done        |
 | Section 34 | Authentication                        | done        |
-| Section 35 | YelpCamp: Adding Authentication       | TODO        |
+| Section 35 | YelpCamp: Adding Authentication       | in-progress |
 | Section 36 | YelpCamp: Cleaning Up                 | TODO        |
 | Section 37 | YelpCamp: Update and Destroy          | TODO        |
 | Section 38 | YelpCamp: UI Improvements             | TODO        |
