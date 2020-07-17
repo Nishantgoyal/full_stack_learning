@@ -8,7 +8,7 @@ const express     = require("express"),
       seedDB      = require("./seeds");
 
 seedDB();
-mongoose.connect("mongodb://192.168.2.2/yelpcamp-v2");
+mongoose.connect("mongodb://db/yelpcamp");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
