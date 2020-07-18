@@ -135,6 +135,11 @@ app.post("/login", passport.authenticate("local", {
   res.send("Logged In");
 });
 
+app.get("/logout", function(req, res) {
+  req.logout();
+  res.render("/campgrounds");
+});
+
 app.listen(8080, function() {
     console.log("Yelpcamp app")
 });
