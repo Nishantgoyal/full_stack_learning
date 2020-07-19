@@ -39,7 +39,7 @@
 | Section 33 | YelpCamp: Comments                    | done        |
 | Section 34 | Authentication                        | done        |
 | Section 35 | YelpCamp: Adding Authentication       | done        |
-| Section 36 | YelpCamp: Cleaning Up                 | TODO        |
+| Section 36 | YelpCamp: Cleaning Up                 | in-progress |
 | Section 37 | YelpCamp: Update and Destroy          | TODO        |
 | Section 38 | YelpCamp: UI Improvements             | TODO        |
 | Section 39 | Git and Github                        | TODO        |
