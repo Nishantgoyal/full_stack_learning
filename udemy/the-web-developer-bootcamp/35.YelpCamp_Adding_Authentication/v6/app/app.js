@@ -30,6 +30,11 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+app.use(function(req, res, next) {
+  res.locals.currentUser = req.user;
+  next();
+});
+
 app.get("/", function(req, res) {
     res.render("landing.ejs");
 });
@@ -39,7 +44,10 @@ app.get("/campgrounds", function(req, res) {
     if(err) {
       console.log(err);
     } else {
-      res.render("campgrounds/index", {campgrounds: campgrounds});
+      res.render("campgrounds/index", {
+        campgrounds: campgrounds,
+        currentUser: req.user
+      });
     }
   });
 });
