@@ -4,9 +4,6 @@ const express     = require("express"),
       mongoose    = require("mongoose"),
       passport    = require("passport"),
       localStrategy = require("passport-local"),
-      axios       = require('axios'),
-      Campground  = require("./models/campgrounds"),
-      Comment     = require("./models/comments"),
       User        = require("./models/users"),
       seedDB      = require("./seeds");
 
@@ -30,7 +27,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 passport.use(new localStrategy(User.authenticate()));
-
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
