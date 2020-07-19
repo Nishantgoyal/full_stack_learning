@@ -76,7 +76,7 @@ app.get("/campgrounds/:id", function(req, res) {
   });
 });
 
-app.get("/campgrounds/:id/comments/new", function(req, res) {
+app.get("/campgrounds/:id/comments/new", isLoggedIn, function(req, res) {
   Campground.findById(req.params.id, function(err, campground) {
     if(err) {
       console.log(err);
@@ -137,8 +137,16 @@ app.post("/login", passport.authenticate("local", {
 
 app.get("/logout", function(req, res) {
   req.logout();
-  res.render("/campgrounds");
+  res.redirect("/campgrounds");
 });
+
+function isLoggedIn(req, res, next) {
+  if(req.isAuthenticated()) {
+    next();
+  } else {
+    res.redirect("/login");
+  }
+}
 
 app.listen(8080, function() {
     console.log("Yelpcamp app")
