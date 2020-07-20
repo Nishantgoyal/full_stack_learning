@@ -8,7 +8,6 @@ router.get("/", function(req, res) {
     res.render("landing.ejs");
 });
 
-
 router.get("/register", function(req, res){
   res.render("register");
 });
@@ -44,13 +43,5 @@ router.get("/logout", function(req, res) {
   req.logout();
   res.redirect("/campgrounds");
 });
-
-function isLoggedIn(req, res, next) {
-  if(req.isAuthenticated()) {
-    next();
-  } else {
-    res.redirect("/login");
-  }
-}
 
 module.exports = router;
