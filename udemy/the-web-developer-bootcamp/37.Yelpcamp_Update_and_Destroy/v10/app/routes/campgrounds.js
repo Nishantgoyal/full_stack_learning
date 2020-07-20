@@ -20,7 +20,7 @@ router.post("/", isLoggedIn, function(req, res) {
     var new_campground = {
       name: req.body.name,
       image: req.body.image_url,
-      desc: req.body.desc,
+      description: req.body.description,
       author: {
         id: req.user.id,
         username: req.user.username
@@ -48,6 +48,28 @@ router.get("/:id", function(req, res) {
     } else {
       console.log(campground);
       res.render("campgrounds/show", {campground: campground});
+    }
+  });
+});
+
+router.get("/:id/edit", function(req, res) {
+  Campground.findById(req.params.id, function(err, campground) {
+    if(err) {
+      console.log(err);
+      res.redirect("/campgrounds");
+    } else {
+      console.log(campground);
+      res.render("campgrounds/edit", {campground: campground});
+    }
+  });
+});
+
+router.put("/:id", function(req, res) {
+  Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(err, campground) {
+    if(err) {
+      console.log(err);
+    } else {
+      res.redirect("/campgrounds/" + req.params.id);
     }
   });
 });

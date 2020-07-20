@@ -5,6 +5,7 @@ const express     = require("express"),
       passport    = require("passport"),
       localStrategy = require("passport-local"),
       User        = require("./models/users"),
+      methodOverride  = require("method-override"),
       seedDB      = require("./seeds");
 
 var campgroundRoutes  = require("./routes/campgrounds"),
@@ -35,6 +36,7 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use(methodOverride("_method"));
 app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
