@@ -3,6 +3,7 @@ const express     = require("express"),
       bodyParser  = require("body-parser"),
       mongoose    = require("mongoose"),
       passport    = require("passport"),
+      flash       = require("connect-flash"),
       localStrategy = require("passport-local"),
       User        = require("./models/users"),
       methodOverride  = require("method-override"),
@@ -40,6 +41,8 @@ app.use(methodOverride("_method"));
 app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
+
+app.use(flash);
 
 app.listen(8080, function() {
     console.log("Yelpcamp app")
