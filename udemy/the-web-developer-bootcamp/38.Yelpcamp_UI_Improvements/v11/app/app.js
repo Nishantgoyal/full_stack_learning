@@ -25,6 +25,7 @@ app.use(require("express-session")({
   resave: false,
   saveUninitialized: false
 }));
+app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -42,7 +43,6 @@ app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-app.use(flash);
 
 app.listen(8080, function() {
     console.log("Yelpcamp app")
