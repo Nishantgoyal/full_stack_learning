@@ -41,7 +41,7 @@
 | Section 35 | YelpCamp: Adding Authentication       | done        |
 | Section 36 | YelpCamp: Cleaning Up                 | done        |
 | Section 37 | YelpCamp: Update and Destroy          | done        |
-| Section 38 | YelpCamp: UI Improvements             | in-progress |
+| Section 38 | YelpCamp: UI Improvements             | done        |
 | Section 39 | Git and Github                        | TODO        |
 | Section 40 | Deploying                             | TODO        |
 | Section 41 | JavaScript: The Tricky Stuff          | TODO        |
