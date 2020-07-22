@@ -5,6 +5,7 @@ module.exports = mongoose.model("Campground",
     name: String,
     image: String,
     description: String,
+    price: String,
     comments: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "Comment"
